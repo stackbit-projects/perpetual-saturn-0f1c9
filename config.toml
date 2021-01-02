@@ -1,0 +1,49 @@
+baseurl = "https://example.com/"
+title = "Site Title"
+theme = "pulp"
+canonifyurls = true
+hasCJKLanguage = true
+themesDir = "themes"
+baseURL = ""
+publishDir = "public"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+author = "Your Name"
+avatar = "avatar.jpg"
+favicon = "favicon.ico"
+description = """
+        Please write anything here.
+        Profiles, backgrounds, favorite things etc.
+    """
+publicationYear = "2019"
+
+[outputs]
+section = [ "JSON", "HTML" ]
+term = [ "JSON", "HTML" ]
+
+[[menu.main]]
+identifier = "blog"
+pre = "<i class='fa fa-book-open fa-lg'></i>"
+url = "/blog/"
+weight = 10
+
+[[menu.main]]
+identifier = "twitter"
+pre = "<i class='fab fa-twitter fa-lg'></i>"
+url = "https://twitter.com/username"
+weight = 20
+
+[[menu.main]]
+identifier = "github"
+pre = "<i class='fab fa-github fa-lg'></i>"
+url = "https://github.com/username"
+weight = 30
+
+[[menu.main]]
+identifier = "email"
+pre = "<i class='fa fa-envelope fa-lg'></i>"
+url = "mailto:username@example.com"
+weight = 40
